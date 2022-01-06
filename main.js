@@ -10,6 +10,10 @@ let quotes = [ { quote: 'Cogito Ergo Sum',
                     {
                       quote: "Don't be Evil ",
                       author: 'Google'
+                    },
+                    {
+                      quote: "Connecting People",
+                      author: 'Facebook'
                     }
                     ]
 
@@ -23,7 +27,7 @@ function change_quote(){
   random_quote = get_random_quote()
   
   document.querySelector("#text").innerText = random_quote.quote
-  document.querySelector("#author").innerText = random_quote.author
+  document.querySelector("#author").innerText = '-' + random_quote.author
 }
               
 function initial_state(){
