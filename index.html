@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Random Quotes</title>
+  </head>
+  <body>
+    <h1>Random Quotes</h1>
+
+    <div id="quote-box" style="width:300px; margin:auto">
+      <p id="text">
+        Pinso Luego Existo
+      </p>
+      <span id="author">Descartes</span>
+
+      <div>
+        <a href="http://twitter.com/intent/tweet" id="tweet-quote" target="_blank">Tweet</a>
+        <button id="new-quote" onClick="change_quote()">New Quote</button>
+      </div>
+    </div>
+
+    <script>
+      let quotes = [ { quote: 'Cogito Ergo Sum',
+                       author: 'Descartes'},
+                    { quote: 'El hombre es el lobo del hombre',
+                      author: 'Hobbes'
+                      },
+                    {
+                      quote: 'Think Different',
+                      author: 'Steve Jobs'
+                    },
+                    {
+                      quote: "Don't be Evil ",
+                      author: 'Google'
+                    }
+                    ]
+
+      function get_random_quote(){
+        let random_index = Math.floor(Math.random() * quotes.length)
+        let random_quote = quotes[random_index]
+        return random_quote
+      }
+
+      function change_quote(){
+        random_quote = get_random_quote()
+        
+        document.querySelector("#text").innerText = random_quote.quote
+        document.querySelector("#author").innerText = random_quote.author
+      }
+                    
+      function initial_state(){
+
+        change_quote()
+      }
+
+      initial_state()
+      
+    </script>
+    
+  </body>
+</html>
