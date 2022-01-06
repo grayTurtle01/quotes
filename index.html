@@ -8,6 +8,8 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
       crossorigin="anonymous">
   </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
   <body>
     <h1 class="text-center">Random Quotes</h1>
 
@@ -18,7 +20,9 @@
       <span id="author" class="text-end mb-2 h6"></span>
 
       <div class="d-flex justify-content-between">
-        <a href="http://twitter.com/intent/tweet" id="tweet-quote" target="_blank" class="btn btn-sm btn-info">Tweet</a>
+        <a href="http://twitter.com/intent/tweet" id="tweet-quote" target="_blank" class="btn btn-sm btn-info">
+          <i class="fab fa-twitter"></i>  
+        </a>
         <button id="new-quote" onClick="change_quote()" class="btn btn-sm btn-primary">New Quote</button>
       </div>
     </div>
