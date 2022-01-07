@@ -67,7 +67,10 @@
           return(
             <div id="quote-box" className="card p-3">
 
-                <p id="text" className="h3 mb-2">{this.state.quote}</p>
+                <p id="text" className="h3 mb-2">
+                  <i className="fa fa-quote-left"></i>
+                  <span className="m-3">{this.state.quote}</span>
+                </p>
 
                 <span id="author" className="text-end mb-2 h6">-{this.state.author}</span>
 
