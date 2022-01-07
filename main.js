@@ -38,29 +38,3 @@ function get_random_color(){
   return color
 }
 
-function change_color(color) {
-  let body = document.querySelector('body')
-  body.style.background = color
-
-  document.querySelector('#new-quote').style.background = color
-  document.querySelector('#tweet-quote').style.background = color
-
-}
-
-function change_quote(){
-  random_quote = get_random_quote()
-  
-  document.querySelector("#text").innerText = random_quote.quote
-  document.querySelector("#author").innerText = '-' + random_quote.author
-
-  color = get_random_color()
-  change_color(color)
-}
-              
-function initial_state(){
-  change_quote()
-}
-
-
-
-initial_state()
