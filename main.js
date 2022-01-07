@@ -16,6 +16,10 @@ let quotes = [
                     {
                       quote: "Connecting People",
                       author: 'Facebook'
+                    },
+                    {
+                      quote: "Yo no soy un hombre, soy dinamita",
+                      author: 'Nietzsche'
                     }
                     ]
 
