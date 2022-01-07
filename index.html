@@ -38,13 +38,18 @@
         }
         
         set_random_state(){
+
           let random_quote = get_random_quote()
           let color = get_random_color()
+          
+          while( random_quote.quote == this.state.quote){
+            random_quote = get_random_quote()
+          }
 
           document.querySelector('body').style.background = color
           document.querySelector('#tweet-quote').style.background = color
           document.querySelector('#tumblr-quote').style.background = color
-          document.querySelector('#new-quote').style.background = color
+          //document.querySelector('#new-quote').style.background = color
 
           this.setState({
             quote: random_quote.quote,
