@@ -20,6 +20,10 @@ let quotes = [
                     {
                       quote: "Yo no soy un hombre, soy dinamita",
                       author: 'Nietzsche'
+                    },
+                    {
+                      quote: "Un hombre es lo que hace, con lo que hicieron de el",
+                      author: 'Sartre'
                     }
                     ]
 
@@ -30,7 +34,7 @@ function get_random_quote(){
 }
 
 function get_random_color(){
-  let colors = ['lightgray', 'ligthblue', 'gray', 'salmon', 'peru', 'lightpink']
+  let colors = ['lightgray', 'ligthblue', 'gray', 'salmon', 'peru', 'lightpink', 'lightcoral']
 
   let index = Math.floor(Math.random()*colors.length)
   let color = colors[index] 
