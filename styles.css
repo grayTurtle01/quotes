@@ -6,6 +6,16 @@
 
 }
 
+
+
 .fa-twitter{
+  font-size: 20px;
+}
+
+#tweet-quote{
+  margin-right: 10px;
+}
+
+.fa-tumblr{
   font-size: 20px;
 }

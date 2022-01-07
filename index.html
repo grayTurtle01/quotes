@@ -43,6 +43,7 @@
 
           document.querySelector('body').style.background = color
           document.querySelector('#tweet-quote').style.background = color
+          document.querySelector('#tumblr-quote').style.background = color
 
           this.setState({
             quote: random_quote.quote,
@@ -71,9 +72,14 @@
                 <span id="author" className="text-end mb-2 h6">-{this.state.author}</span>
 
                 <div className="d-flex justify-content-between">
-                  <a href="http://twitter.com/intent/tweet" id="tweet-quote" target="_blank" className="btn btn-sm btn-info">
-                    <i className="fab fa-twitter" ></i>  
-                  </a>
+                  <div>
+                    <a href="http://twitter.com/intent/tweet" id="tweet-quote" target="_blank" className="btn btn-sm btn-info">
+                      <i className="fab fa-twitter" ></i>  
+                    </a>
+                    <a href="http://" id="tumblr-quote" target="_blank" className="btn btn-sm btn-info ">
+                        <i className="fab fa-tumblr" ></i>  
+                    </a>
+                </div>
                   <button id="new-quote" onClick={this.handleClick} className="btn btn-sm btn-primary">New Quote</button>
                 </div>
             </div>
