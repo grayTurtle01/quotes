@@ -24,7 +24,11 @@ let quotes = [
                     {
                       quote: "Un hombre es lo que hace, con lo que hicieron de el",
                       author: 'Sartre'
-                    }
+                    },
+                    {
+                      quote: "No hay hechos solo interpretaciones",
+                      author: 'Nietzsche'
+                    },
                     ]
 
 function get_random_quote(){
